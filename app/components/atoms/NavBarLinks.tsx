@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "antd";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const items = [
     { key: "1", label: <Link to="/productos">Ver Productos</Link> },
