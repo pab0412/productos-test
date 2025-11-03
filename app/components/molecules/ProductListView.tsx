@@ -1,4 +1,3 @@
-// src/components/molecules/ProductsListView.tsx
 import React from "react";
 import ProductViewCardAtom from "../atoms/ProductViewCard";
 
