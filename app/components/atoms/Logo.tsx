@@ -4,7 +4,7 @@ import {Flex} from "antd";
 const Logo = () => {
     return (
         <Flex style={{ fontSize: "20px", fontWeight: "bold" }}>
-            <span style={{ color: "#1890ff" }}>★</span> EduStream
+            <span style={{ color: "#1890ff" }}>🗿</span> Productos
         </Flex>
     )
 }
