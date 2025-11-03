@@ -1,15 +1,31 @@
 import React from "react";
 import { Menu } from "antd";
-import { Link } from "react-router";
-
-const items = [
-    { key: "1", label: <Link to="/productos">Ver Productos</Link> },
-    { key: "2", label: <Link to="/productos/agregar">Agregar Productos</Link> },
-    { key: "3", label: <Link to="/productos/editar/1">Editar Productos</Link> },
-];
+import { useNavigate } from "react-router";
 
 const NavBarLinks = () => {
-    return <Menu mode="horizontal" items={items} />;
+    const navigate = useNavigate();
+
+    const items = [
+        { key: "1", label: "Ver Productos" },
+        { key: "2", label: "Agregar Productos" },
+        { key: "3", label: "Editar Productos" },
+    ];
+
+    const handleMenuClick = (e: { key: string }) => {
+        switch (e.key) {
+            case "1":
+                navigate("/");
+                break;
+            case "2":
+                navigate("/productos/agregar");
+                break;
+            case "3":
+                navigate("/productos/editar/1");
+                break;
+        }
+    };
+
+    return <Menu mode="horizontal" items={items} onClick={handleMenuClick} />;
 };
 
 export default NavBarLinks;
