@@ -34,6 +34,7 @@ const ProductFormCardAtom: React.FC<ProductFormCardAtomProps> = ({ mode, default
             <button
                 className="bg-blue-600 text-white p-2 rounded-xl"
                 onClick={() => onSubmit({ name, price })}
+                style={{cursor: "pointer"}}
             >
                 Guardar
             </button>
