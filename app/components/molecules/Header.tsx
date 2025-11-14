@@ -2,7 +2,7 @@ import React from 'react'
 import {Layout} from "antd";
 
 import Logo from "../atoms/Logo";
-import NavBarLinks from "../atoms/NavBarLinks";
+import NavBar from "~/components/molecules/NavBar";
 
 const { Header} = Layout;
 
@@ -10,7 +10,7 @@ const MainHeader = () => {
     return (
         <Header>
             <Logo />
-            <NavBarLinks />
+            <NavBar />
         </Header>
     )
 }

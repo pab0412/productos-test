@@ -8,7 +8,7 @@ const NavBarLinks = () => {
     const items = [
         { key: "1", label: "Ver Productos" },
         { key: "2", label: "Agregar Productos" },
-        { key: "3", label: "Editar Productos" },
+        { key: "3", label: "Registrarse"}
     ];
 
     const handleMenuClick = (e: { key: string }) => {
@@ -20,7 +20,7 @@ const NavBarLinks = () => {
                 navigate("/productos/agregar");
                 break;
             case "3":
-                navigate("/productos/editar/1");
+                navigate("register")
                 break;
         }
     };

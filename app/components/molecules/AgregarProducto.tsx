@@ -1,4 +1,3 @@
-// src/components/templates/AddProduct.tsx
 import React from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";

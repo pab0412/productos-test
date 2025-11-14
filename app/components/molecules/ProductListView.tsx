@@ -62,7 +62,7 @@ export default function ProductsListView() {
                         />
                         <div className="flex gap-2 mt-2">
                             <button
-                                onClick={() => navigate(`/productos/editar/${p.id}`)}
+                                onClick={() => navigate(`/productos/${p.id}`)}
                                 className="flex-1 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded cursor-pointer"
                             >
                                 Editar

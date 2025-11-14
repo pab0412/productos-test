@@ -27,7 +27,7 @@ const EditProduct = () => {
             } catch (error) {
                 console.error('Error al cargar producto:', error);
                 alert('Producto no encontrado');
-                navigate('/productos');
+                navigate('/');
             } finally {
                 setLoading(false);
             }
